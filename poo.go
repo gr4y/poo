@@ -4,21 +4,9 @@ import (
 	"encoding/xml"
 	"github.com/gr4y/poo/lib"
 	"io/ioutil"
-	"log"
 	"net/http"
 	"regexp"
 )
-
-func main() {
-	feed, err := ParseFeed("http://feeds.5by5.tv/b2w")
-	// feed, err := ParseFeed("http://blog.swessel.me/feed")
-	// feed, err := ParseFeed("http://blog.swessel.me/feed")
-	if err == nil {
-		log.Println(feed)
-	} else {
-		panic(err)
-	}
-}
 
 func ParseFeed(url string) (poo.Feed, error) {
 	var err error
