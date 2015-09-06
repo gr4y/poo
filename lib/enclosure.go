@@ -1,4 +1,4 @@
-package rss
+package poo
 
 type Enclosure struct {
 	URL      string `xml:"url,attr"`

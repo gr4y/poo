@@ -1,8 +1,8 @@
-package main
+package poo
 
 import (
 	"encoding/xml"
-	"github.com/gr4y/poo/rss"
+	"github.com/gr4y/poo/lib"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -20,7 +20,7 @@ func main() {
 	}
 }
 
-func ParseFeed(url string) (rss.Feed, error) {
+func ParseFeed(url string) (poo.Feed, error) {
 	var err error
 	if isValidURL(url) {
 		resp, err := http.Get(url)
@@ -28,16 +28,16 @@ func ParseFeed(url string) (rss.Feed, error) {
 			b, err := ioutil.ReadAll(resp.Body)
 			if err == nil {
 				xmlStr := string(b[:])
-				return parseXML(xmlStr)
+				return ParseXML(xmlStr)
 			}
 		}
-		return rss.Feed{}, err
+		return poo.Feed{}, err
 	}
-	return rss.Feed{}, err
+	return poo.Feed{}, err
 }
 
-func parseXML(xmlStr string) (rss.Feed, error) {
-	feed := rss.Feed{}
+func ParseXML(xmlStr string) (poo.Feed, error) {
+	feed := poo.Feed{}
 	if err := xml.Unmarshal([]byte(xmlStr), &feed); err != nil {
 		return feed, err
 	}

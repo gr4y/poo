@@ -1,7 +1,7 @@
-package rss
+package poo
 
 import (
-	"github.com/gr4y/poo/rss/extension"
+	"github.com/gr4y/poo/lib/extension"
 )
 
 type Channel struct {
