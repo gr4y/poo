@@ -5,6 +5,6 @@ type ITunesItem struct {
 	Subtitle string `xml:"http://www.itunes.com/dtds/podcast-1.0.dtd subtitle"`
 	Summary  string `xml:"http://www.itunes.com/dtds/podcast-1.0.dtd summary"`
 	Explicit string `xml:"http://www.itunes.com/dtds/podcast-1.0.dtd explicit"`
-	Duration string `xml:"http://www.itunes.com/dtds/podcast-1.0.dtd duration"`
+	Duration int64  `xml:"http://www.itunes.com/dtds/podcast-1.0.dtd duration"`
 	Image    string `xml:"http://www.itunes.com/dtds/podcast-1.0.dtd image"`
 }
