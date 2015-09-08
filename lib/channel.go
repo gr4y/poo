@@ -6,11 +6,11 @@ import (
 
 type Channel struct {
 	extension.ITunesChannel
-	Title       string `xml:"title"`
-	Link        string `xml:"link"`
-	PubDate     string `xml:"pubDate"`
-	Description string `xml:"description"`
-	Language    string `xml:"language"`
-	Copyright   string `xml:"copyright"`
-	Items       []Item `xml:"item"`
+	Title       string   `xml:"title"`
+	Link        string   `xml:"link"`
+	PubDate     DateTime `xml:"pubDate"`
+	Description string   `xml:"description"`
+	Language    string   `xml:"language"`
+	Copyright   string   `xml:"copyright"`
+	Items       []Item   `xml:"item"`
 }
