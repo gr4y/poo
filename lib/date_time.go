@@ -2,7 +2,6 @@ package poo
 
 import (
 	"encoding/xml"
-	"fmt"
 	"time"
 )
 
