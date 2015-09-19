@@ -30,8 +30,8 @@ func TestWithString(t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
-	if feed.Channel.Title != "Back to Work" {
-		t.Log(feed.Channel.Title)
+	if feed.Channel.Title != "All About Everything" {
+		t.Log(fmt.Sprintf("%s doesn't match", feed.Channel.Title))
 		t.Fail()
 	}
 }
