@@ -7,5 +7,9 @@ go:
  - release
  - tip
 
+os:
+  - linux
+  - osx
+
 script:
- - go test -v ./...
+ - make test
