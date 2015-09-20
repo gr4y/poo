@@ -4,13 +4,14 @@ poo [![Build Status](https://travis-ci.org/gr4y/poo.svg)](https://travis-ci.org/
 
 When I was building an RSS reader I discovered how broken RSS Feeds are and that inspired me to build my own RSS parsing library in Go. I thought about a name long and hard and came up with *poo*, which reflects the way website owners care about their feeds meeting the standard.
 
-## There are still things to do:
+## Usage
 
-* add some working unit tests
+  (That Part will be added later.)
 
-## Done
+## Things to do / Things done
 
-* unmarshalling pubDate into time.Time instead of string- (Works with RFC 1132 and RFC 1132 Z)
-* add support for iTunes Podcast Feeds-
+All todos and issues can be found on the [Issue Tracker](https://github.com/gr4y/poo/issues))
 
-If you want to contribute, feel free to fork, hack and submit a PR.
+## Contribution
+
+Feel free to fork the project, add your feature / idea and submit a Pull Request.
