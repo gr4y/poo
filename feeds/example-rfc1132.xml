@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <title>All About Everything</title>
+    <link>http://www.example.com/podcasts/everything/index.html</link>
+    <language>en-us</language>
+    <copyright>&#x2117; &amp; &#xA9; 2014 John Doe &amp; Family</copyright>
+    <item>
+      <title>Shake Shake Shake Your Spices</title>
+      <description><![CDATA[This week we talk about <a href="https://itunes/apple.com/us/book/antique-trader-salt-pepper/id429691295?mt=11">salt and pepper shakers</a>, comparing and contrasting pour rates, construction materials, and overall aesthetics. Come and join the party!]]></description>
+      <guid>http://example.com/podcasts/archive/aae20140615.m4a</guid>
+      <pubDate>Sun, 15 Jun 2014 19:00:00 0000</pubDate>
+    </item>
+    <item>
+      <title>Socket Wrench Shootout</title>
+      <description>This week we talk about metric vs. Old English socket wrenches. Which one is better? Do you really need both? Get all of your answers here.</description>
+      <guid>http://example.com/podcasts/archive/aae20140608.mp3</guid>
+      <pubDate>Wed, 08 Jun 2014 19:00:00 0000</pubDate>
+    </item>
+    <item>
+      <title>Red,Whine, &amp; Blue</title>
+      <description>This week we talk about surviving in a Red state if you are a Blue person. Or vice versa.</description>
+      <guid>http://example.com/podcasts/archive/aae20140601.mp3</guid>
+      <pubDate>Wed, 01 Jun 2014 19:00:00 0000</pubDate>
+    </item>
+  </channel>
+</rss>
