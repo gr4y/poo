@@ -25,7 +25,7 @@ func TestWithString(t *testing.T) {
 	if testing.Short() {
 		t.Skip("Skipping test in short mode.")
 	}
-	xmlFeed := readXML("example-itunes_feed.xml")
+	xmlFeed := readXML("feeds/example-itunes_feed.xml")
 	feed, err := poo.ParseXML(xmlFeed)
 	if err != nil {
 		t.Error(err)
