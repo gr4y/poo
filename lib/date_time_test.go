@@ -7,25 +7,30 @@ import (
 	"testing"
 )
 
-func TestRFC1123(t *testing.T) {
+func TestRFC1132(t *testing.T) {
 	// if testing.Short() {
 	// 	t.Skip("Skipping test in short mode.")
 	// }
-	xmlFeed := readXML("example/rfc1123-feed.xml")
+	xmlFeed := readXML("../feeds/example-rfc1132.xml")
 	feed, err := poo.ParseXML(xmlFeed)
-	t.Log(feed.Channel.Items[0].PubDate)
+	if len(feed.Channel.Items) < 3 {
+		t.Fail()
+	}
 	if err != nil {
 		t.Error(err)
 	}
 }
 
-func TestRFC1123Z(t *testing.T) {
+func TestRFC1132Z(t *testing.T) {
 	// if testing.Short() {
 	// 	t.Skip("Skipping test in short mode.")
 	// }
-	xmlFeed := readXML("example/rfc1123z-feed.xml")
+	xmlFeed := readXML("../feeds/example-rfc1132z.xml")
 	feed, err := poo.ParseXML(xmlFeed)
-	t.Log(feed.Channel.Items[0].PubDate)
+	if len(feed.Channel.Items) < 3 {
+		t.Fail()
+	}
+
 	if err != nil {
 		t.Error(err)
 	}
